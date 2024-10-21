@@ -28,6 +28,7 @@ body>header>div>img{
 }
 
 #infos{
+    padding-top: 58px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -80,7 +81,7 @@ body>header>div>img{
     padding-top: 150px;
     display: grid;
     grid-template-columns: 1.2fr 1.2fr;
-    grid-template-rows: 200px ;
+    grid-template-rows: 700px ;
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -97,13 +98,15 @@ body>header>div>img{
 }
 
 #hard>p{
-    padding-left: 270px;
-    font-size: 50px
+    padding-left: 400px;
+    font-size: 59px
 }
 
 #hard>ul{
-    list-style: none;
-    padding-left: 255px;
+    list-style: square;
+    padding-top: 30px;
+    padding-left: 435px;
+    font-size: 25px;
 }
 
 #soft>p>span{
@@ -117,11 +120,40 @@ body>header>div>img{
 
 #soft>p{
     padding-left: 220px;
-    font-size: 50px;
+    font-size: 59px;
 }
 
 #soft>ul{
-    list-style: none;
-    padding-left: 210px;
+    list-style: square;
+    padding-top: 30px;
+    padding-left: 260px;
+    font-size: 25px;
 }
 
+#area-projeto{
+    padding-top: 140px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+#title{
+    padding-bottom: 130px;
+    font-size: 59px;
+    color: #D9AC85;
+
+}
+
+.projetos{
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr;
+    grid-template-rows: 400px ;
+}
+
+.projetos>div{
+    background-color: #1E1729;
+    width: 70%;
+    padding-left: 500px;
+}
