@@ -47,7 +47,7 @@ body>header>div>img{
     font-size: 55px;
 }
 
-#TI{
+#job{
     font-size: 40px;
     color: #D9AC85;
 }
@@ -98,14 +98,14 @@ body>header>div>img{
 }
 
 #hard>p{
-    padding-left: 400px;
+    padding-left: 370px;
     font-size: 59px
 }
 
 #hard>ul{
     list-style: square;
     padding-top: 30px;
-    padding-left: 435px;
+    padding-left: 405px;
     font-size: 25px;
 }
 
@@ -119,19 +119,19 @@ body>header>div>img{
 }
 
 #soft>p{
-    padding-left: 220px;
+    padding-left: 130px;
     font-size: 59px;
 }
 
 #soft>ul{
     list-style: square;
     padding-top: 30px;
-    padding-left: 260px;
+    padding-left: 170px;
     font-size: 25px;
 }
 
 #area-projeto{
-    padding-top: 140px;
+    padding-top: 110px;
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -140,20 +140,31 @@ body>header>div>img{
 }
 
 #title{
-    padding-bottom: 130px;
+    padding-bottom: 94px;
     font-size: 59px;
     color: #D9AC85;
-
 }
 
 .projetos{
     display: grid;
     grid-template-columns: 1.2fr 1.2fr;
     grid-template-rows: 400px ;
+    padding-left: 250px;
+    padding-bottom: 130px;
 }
 
 .projetos>div{
     background-color: #1E1729;
-    width: 70%;
-    padding-left: 500px;
+    width: 60%;
+    border-radius: 20px;
+    font-size: 20px;
+    height: 350px;
+}
+
+.projetos>div>img{
+    margin-left: 30px;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 85%;
 }
