@@ -161,10 +161,22 @@ body>header>div>img{
     height: 350px;
 }
 
-.projetos>div>img{
+.projetos>div>a>img{
     margin-left: 30px;
     display: block;
     padding-top: 30px;
     padding-bottom: 50px;
     width: 85%;
+}
+
+#area-contato{
+    padding-top: 90px;
+    height: 85vh;
+    padding-left: 18%;
+}
+
+.formulario{
+    width: 1000px;
+    height: 90%;
+    background-color: #1E1729;
 }
