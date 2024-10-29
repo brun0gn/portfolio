@@ -1,4 +1,5 @@
 
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -147,16 +148,34 @@ body>header>div>img{
 
 #mais-pj{
     padding-top: 100px;
+    display: block;
+}
+
+#mais-pj>div{
+    background-color: #15111C;
+}
+
+#mais-pj>div>svg{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 50px;
 }
 
 #area-contato{
     padding-top: 30px;
     height: 85vh;
-    padding-left: 18%;
+    text-align: center;
 }
 
 #area-contato>p{
     color: #D9AC85;
     font-size: 59px;
-    padding-left: 350px;
+}
+
+.contato-info{
+    display: block;
+}
+
+#rodapé{
+    height: 29vh;
 }
