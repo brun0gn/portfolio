@@ -1,6 +1,10 @@
+
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body{
@@ -28,9 +32,6 @@ body>header>div>img{
 
 #infos{
     padding-top: 58px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     color: white;
     padding-left: 200px;
     margin-top: 80px;
@@ -77,64 +78,41 @@ body>header>div>img{
 }
 
 #skills{
+    text-align: center;
     padding-top: 150px;
-    display: grid;
-    grid-template-columns: 1.2fr 1.2fr;
-    grid-template-rows: 700px ;
     color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
-#hard>p>span{
-    color: #D9AC85;
-}
-
-#hard{
-    display: block;
-    line-height: 80px;
-}
-
-#hard>p{
-    padding-left: 370px;
-    font-size: 59px
-}
-
-#hard>ul{
-    list-style: square;
-    padding-top: 30px;
-    padding-left: 405px;
-    font-size: 25px;
-}
-
-#soft>p>span{
-    color: #D9AC85;
-}
-
-#soft{
-    display: block;
-    line-height: 80px;
-}
-
-#soft>p{
-    padding-left: 130px;
+#sk-title>p{
     font-size: 59px;
+    padding-bottom: 94px;
 }
 
-#soft>ul{
-    list-style: square;
-    padding-top: 30px;
-    padding-left: 170px;
-    font-size: 25px;
+#sk-title>p>span{
+    color: #D9AC85;
+}
+
+#skill-list{
+    color: #C9C5FF;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px;
+    padding-left: 7%;
+    gap: 20px;
+}
+
+#skill-list>div{
+    background-color: #1E1729;
+    width: 80%;
+    font-size: 43px;
+    height: 250px;
+    align-content: center;
+    
 }
 
 #area-projeto{
-    padding-top: 110px;
+    padding-top: 140px;
     color: white;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     text-align: center;
 }
 
@@ -146,16 +124,15 @@ body>header>div>img{
 
 .projetos{
     display: grid;
-    grid-template-columns: 1.2fr 1.2fr;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr;
     grid-template-rows: 400px ;
-    padding-left: 250px;
+    padding-left: 110px;
     padding-bottom: 130px;
 }
 
 .projetos>div{
     background-color: #1E1729;
-    width: 60%;
-    border-radius: 20px;
+    width: 80%;
     font-size: 20px;
     height: 350px;
 }
@@ -168,14 +145,18 @@ body>header>div>img{
     width: 85%;
 }
 
+#mais-pj{
+    padding-top: 100px;
+}
+
 #area-contato{
-    padding-top: 90px;
+    padding-top: 30px;
     height: 85vh;
     padding-left: 18%;
 }
 
-.formulario{
-    width: 1000px;
-    height: 90%;
-    background-color: #1E1729;
+#area-contato>p{
+    color: #D9AC85;
+    font-size: 59px;
+    padding-left: 350px;
 }
