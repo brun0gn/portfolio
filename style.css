@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -173,7 +171,13 @@ body>header>div>img{
 }
 
 .contato-info{
+    
+}
+
+.contato-info>svg{
+    width: 50px;
     display: block;
+    margin-left: 48.5%;
 }
 
 #rodapé{
