@@ -1,9 +1,9 @@
 body.light-mode {
-    background-color: #e5e3d7;
+    background-color: #e7e3ee;
 }
 
 .light-mode header {
-    background-color: #e5e3d7;
+    background-color: #e7e3ee;
     color: #15111C;
     border-bottom: 1px solid #CCCCCC;
 }
@@ -17,7 +17,7 @@ body.light-mode {
 }
 
 .light-mode #job {
-    color: #b0e389;
+    color: #c4b46e;
 }
 
 .light-mode #about-me {
@@ -25,38 +25,38 @@ body.light-mode {
 }
 
 .light-mode #skills, .light-mode #skill-list {
-    color: #d2b980;
-    background-color: #e5e3d7;
+    color: #040038;
+    background-color: #e7e3ee;
 }
 
 .light-mode #skill-list>div{
-    background-color: #d8d5c4;
+    background-color: #d5c7f3;
 }
 
 .light-mode #projeto-title {
-    color: #b0e389;
+    color: #c4b46e;
 }
 
 .light-mode #skills>#sk-title{
-    color: #b0e389;
+    color: #c4b46e;
 }
 
 .light-mode .projetos>div {
-    background-color: #d8d5c4;
-    color: #d2b980;
+    background-color: #d5c7f3;
+    color: #040038;
 }
 
 .light-mode .projetos>#mais-pj>div>div, .light-mode .projetos>#mais-pj>div>div>svg{
-    background-color: #e5e3d7;
+    background-color: #e7e3ee;
     fill: #d2b980;
 }
 
 .light-mode #area-contato p {
-    color: #d2b980;
+    color: #040038;
 }
 
 .light-mode #area-contato>#contato-title {
-    color: #b0e389;
+    color: #c4b46e;
 }
 
 .light-mode .contato-info {
@@ -65,7 +65,7 @@ body.light-mode {
 
 .light-mode #rodapé {
     color: #2c2929;
-    background-color: #e5e3d7;
+    background-color: #e7e3ee;
 }
 
 .light-mode hr {
@@ -81,5 +81,5 @@ body.light-mode {
 }
 
 .light-mode .contato-info>a>svg{
-    stroke: #d2b980;
+    fill: #15111C;
 }
