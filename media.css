@@ -1,3 +1,108 @@
-@media (max-width: ) {
+#skill-list {
+    grid-template-columns: repeat(300px);  
+    font-size: 37px;
+}
+
+.projetos {
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+@media (max-width: 1199px) {
+    #skill-list {
+        font-size: 32px;
+    }
+
+    .projetos {
+        font-size: 18px;
+    }
+
+    .projetos>#mais-pj>div{
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    #header-info {
+        font-size: 18px;
+    }
+
+    #skill-list {
+        grid-template-columns: repeat(300px); 
+        font-size: 28px;
+    }
+
+    #sk-title{
+        padding-top: 200px;
+    }
+
+    .projetos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .projetos>#mais-pj>div{
+        padding-left: 218px;
+    }
+}
+
+@media (max-width: 767px) {
+    #header-info {
+        font-size: 16px;
+    }
+
+    #skill-list {
+        grid-template-columns: 1fr; 
+        font-size: 24px;
+    }
+
+    #sk-title{
+        padding-top: 250px;
+    }
+
+    .projetos {
+        grid-template-columns: 1fr; 
+        font-size: 16px;
+    }
+
+    #me {
+        font-size: 45px;
+    }
+
+    #job {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    #header-info {
+        font-size: 14px;
+    }
+
+    #hello {
+        font-size: 24px;
+    }
+
+    #me {
+        font-size: 35px;
+    }
+
+    #job {
+        font-size: 25px;
+    }
+
+    #about-me, #links, .contato-info, #rodapé p {
+        font-size: 18px;
+    }
+
+    #sk-title{
+        padding-top: 200px;
+    }
+
+    #skill-list {
+        font-size: 20px;
+    }
+
+    .projetos {
+        font-size: 16px;
+    }
     
 }
