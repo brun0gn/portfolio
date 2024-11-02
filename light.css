@@ -83,3 +83,8 @@ body.light-mode {
 .light-mode .contato-info>a>svg{
     fill: #15111C;
 }
+
+.light-mode header>div>div>button{
+    background-color:#d5c7f3;
+    color:#2c2929
+}
