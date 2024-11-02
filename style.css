@@ -273,3 +273,8 @@ hr{
 .projetos > div {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+header>div>div>button{
+    background-color: #1E1729;
+    color: white;
+}
