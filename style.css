@@ -1,0 +1,164 @@
+:root {
+  --bg: #15111c;
+  --card: #1e1729;
+  --card-texto: #ffffff;
+  --card-suave: #b4aec6;
+  --card-acento: #d9ac85;
+  --card2: #1e1729;
+  --card2-texto: #ffffff;
+  --card2-suave: #b4aec6;
+  --card2-acento: #d9ac85;
+  --texto: #ffffff;
+  --suave: #a09bb0;
+  --ouro: #d9ac85;
+  --lilas: #c9c5ff;
+  --borda: #2f2a3a;
+  --lado: max(24px, calc((100vw - 1100px) / 2));
+}
+:root[data-tema="claro"] {
+  --bg: #f3f5f1;
+  --card: #e3e7e2;
+  --card-texto: #14231f;
+  --card-suave: #4a5b55;
+  --card-acento: #0e6a5a;
+  --card2: #d6e9e0;
+  --card2-texto: #163d33;
+  --card2-suave: #3f5f55;
+  --card2-acento: #0e6a5a;
+  --texto: #14231f;
+  --suave: #4a5b55;
+  --ouro: #0e6a5a;
+  --lilas: #1f3b5c;
+  --borda: #d3dcd6;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-tema]) {
+    --bg: #f3f5f1; --card: #e3e7e2; --card-texto: #14231f; --card-suave: #4a5b55; --card-acento: #0e6a5a;
+    --card2: #d6e9e0; --card2-texto: #163d33; --card2-suave: #3f5f55; --card2-acento: #0e6a5a; --texto: #14231f;
+    --suave: #4a5b55; --ouro: #0e6a5a; --lilas: #1f3b5c; --borda: #d3dcd6;
+  }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body {
+  font-family: "Poppins", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--texto);
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--ouro); outline-offset: 3px; }
+
+header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--borda);
+}
+nav {
+  padding: 14px var(--lado);
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+}
+.logo { font-family: "Archivo Black", "Arial Black", sans-serif; font-size: 28px; line-height: 1; letter-spacing: .02em; color: var(--texto); }
+.links { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; justify-content: flex-end; }
+.links a:hover { color: var(--ouro); }
+#tema {
+  white-space: nowrap;
+  background: transparent; color: var(--texto);
+  border: 1px solid var(--ouro); border-radius: 6px;
+  padding: 6px 12px; font: inherit; font-size: 14px; cursor: pointer;
+}
+
+section { padding: 96px var(--lado) 40px; }
+#home { padding-top: 170px; padding-bottom: 40px; }
+
+.ola { font-size: 22px; color: var(--suave); }
+h1 { font-size: clamp(38px, 7vw, 64px); line-height: 1.1; font-weight: 600; }
+.cargo { font-size: clamp(20px, 3.4vw, 30px); color: var(--ouro); margin-top: 8px; }
+.resumo { max-width: 60ch; margin-top: 20px; font-size: 18px; color: var(--suave); }
+
+h2 { font-size: clamp(30px, 5vw, 44px); color: var(--ouro); font-weight: 600; margin-bottom: 32px; }
+h3 { font-size: 18px; font-weight: 500; }
+
+.botoes { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+.btn {
+  padding: 10px 22px; border-radius: 8px;
+  border: 1px solid var(--ouro); color: var(--ouro);
+  transition: background .2s, color .2s;
+}
+.btn:hover { background: var(--ouro); color: var(--bg); }
+.btn.principal { background: var(--ouro); color: var(--bg); }
+.btn.principal:hover { opacity: .88; }
+
+.redes { display: flex; gap: 20px; margin-top: 28px; color: var(--lilas); }
+.redes a { border-bottom: 1px solid var(--borda); }
+.redes a:hover { color: var(--ouro); }
+
+.trilha { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.trilha > div { background: var(--card); padding: 22px; border-left: 3px solid var(--card-acento); border-radius: 4px; }
+.trilha p { color: var(--card-suave); margin-top: 6px; font-size: 15px; }
+
+.lista-skills { list-style: none; display: flex; flex-wrap: wrap; gap: 12px; }
+.lista-skills li {
+  background: var(--card); color: var(--card-texto);
+  padding: 10px 20px; border-radius: 999px; font-size: 17px;
+}
+
+.grade { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.card { background: var(--card); padding: 20px; border-radius: 10px; transition: transform .2s; }
+.card:hover { transform: translateY(-4px); }
+.card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-radius: 6px; display: block; margin-bottom: 14px; }
+.card a { color: var(--card-texto); }
+.card a:hover h3 { color: var(--card-acento); }
+.trilha h3, .card h3 { color: var(--card-texto); }
+.card p { color: var(--card-suave); font-size: 15px; margin-top: 6px; }
+.card.mais { display: grid; place-items: center; text-align: center; min-height: 200px; }
+.plus { display: block; font-size: 54px; line-height: 1; color: var(--card-acento); }
+
+#contato { padding-bottom: 80px; }
+.chamada { color: var(--suave); font-size: 18px; }
+
+footer { border-top: 1px solid var(--borda); text-align: center; padding: 32px 24px; color: var(--suave); font-size: 14px; }
+footer .logo { display: block; margin-bottom: 10px; font-size: 26px; }
+
+@media (max-width: 640px) {
+  .links { font-size: 13px; }
+  nav { flex-direction: column; gap: 8px; padding: 10px var(--lado); }
+  .links { justify-content: center; gap: 14px; font-size: 14px; }
+  html { scroll-padding-top: 120px; }
+  #home { padding-top: 190px; }
+  :root { --lado: 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .card { transition: none; }
+}
+
+/* conteúdo do currículo */
+.texto { max-width: 70ch; color: var(--suave); font-size: 17px; margin-bottom: 16px; }
+.sub { color: var(--lilas); margin: 28px 0 12px; font-size: 16px; }
+.meta { color: var(--card-acento); font-size: 14px; margin-top: 4px; }
+.trilha.um { grid-template-columns: 1fr; }
+.itens { margin: 12px 0 0 20px; color: var(--card-suave); font-size: 15px; }
+.itens li { margin-bottom: 6px; }
+
+/* animação de entrada e saída ao rolar */
+.reveal {
+  opacity: 0;
+  translate: -48px 0;
+  transition: opacity .6s ease, translate .6s ease;
+}
+.reveal.visivel { opacity: 1; translate: 0 0; }
+.card { transition: transform .2s, opacity .6s ease, translate .6s ease; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; translate: none; transition: none; }
+}
+
+/* skills e projetos usam o segundo conjunto de cores (verde suave no tema claro) */
+#skills, #projetos, #certificados {
+  --card: var(--card2);
+  --card-texto: var(--card2-texto);
+  --card-suave: var(--card2-suave);
+  --card-acento: var(--card2-acento);
+}
