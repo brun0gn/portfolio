@@ -155,7 +155,7 @@ footer .logo { display: block; margin-bottom: 10px; font-size: 26px; }
   .reveal { opacity: 1; translate: none; transition: none; }
 }
 
-/* skills e projetos usam o segundo conjunto de cores (verde suave no tema claro) */
+/* skills e projetos usam o segundo conjunto de cores*/
 #skills, #projetos, #certificados {
   --card: var(--card2);
   --card-texto: var(--card2-texto);
